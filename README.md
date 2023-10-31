@@ -5,6 +5,6 @@ This tool aims to help Openstack operators and administrators analyze message er
 Edit the openstack-log-analyser.py file and change the Openstack logs folder path and target_data_time as desired.
 
 ```python
-python openstack-log-analyser.py
+python openstack-log-analyzer.py
 ```
 
