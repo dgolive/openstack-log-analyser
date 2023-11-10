@@ -6,6 +6,15 @@ log_directory = '/var/log/kolla' # Replace with the correct Openstack Logs folde
 
 target_date_time = datetime(2023, 10, 30, 12, 00, 00)  # Replace with your desired date and time
 
+
+
+print("")
+print("Openstack Log Analyser")
+print("Enter with year, month, day, hour, minutes and seconds. The logs will gather from this date onwards")
+set_date_time_ge = int(input("sample format: 2023, 10, 30, 12, 00, 00: "))
+print(set_date_time_ge)
+target_date_time = datetime(set_date_time_ge) 
+
 error_patterns = [
     r'ERROR',  # Add more error patterns as needed
     r'Exception',
