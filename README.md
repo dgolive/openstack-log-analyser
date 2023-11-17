@@ -4,7 +4,7 @@ This tool aims to help Sys-admins and Operators to analyze message errors in a v
 ### How to use it
 Enter with log folder path and target data time as desired.
 
-```python
+```
 python log-analyzer.py
 ```
 
