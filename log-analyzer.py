@@ -5,16 +5,16 @@ from datetime import datetime
 import re
 import pandas as pd
 
-log_directory = 'logs' # Replace with the correct Openstack Logs folder path
+# log_directory = 'logs' # Replace with the correct Logs folder path
 
-target_date_time = datetime(2023, 10, 20, 12, 00, 00)  # Replace with your desired date and time
+# target_date_time = datetime(2023, 10, 20, 12, 00, 00)  # Replace with your desired date and time
 
-# print("")
-# print("Openstack Log Analyser")
-# print("Enter with year, month, day, hour, minutes and seconds. The logs will gather from this date onwards")
-# set_date_time_ge = int(input("sample format: 2023, 10, 30, 12, 00, 00: "))
-# print(set_date_time_ge)
-# target_date_time = datetime(set_date_time_ge) 
+print("")
+print("Log Analyser")
+log_directory = input("Log Folder Path: ")
+print("Enter with year, month, day, hour, minutes and seconds. The logs will gather from this date onwards")
+input_date_time = input("sample format: 2023, 10, 30, 12, 00, 00: ")
+target_date_time = datetime(input_date_time)
 
 error_patterns = [
     r'ERROR',  # Add more error patterns as needed
